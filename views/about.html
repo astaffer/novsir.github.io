@@ -1,0 +1,25 @@
+﻿<div class="down" ng-controller="AboutController">
+  <div class="container" id = "rcorners1">
+	<div class="row">
+	  <h3>{{about.title}}</h3>
+	  <div class="col-md-6">
+	  <IMG class = "centered" ng-src="{{about.img}}" alt = "{{about.alt}}"></IMG>
+	  </div>
+	  <div class="col-md-6">
+		
+			<p>{{about.text}}</p>
+			<p align="left">Мы находимся по адресу:<strong>{{contacts.address}}</strong></p>
+			<p align="left">Наш телефон:<strong>{{contacts.phones[0]}}</strong></p>
+			<p align="left">Наш e-mail:<strong>{{contacts.emails[0]}}</strong></p>
+			<p align="left">Режим работы:<strong >{{contacts.timetable[0]}}</strong></p>
+			 <!-- VK Widget -->
+			<div ng-include="'views/vk.html'"></div>
+	  </div>
+	  
+	</div>
+ 
+  </div>
+</div> 	
+
+
+

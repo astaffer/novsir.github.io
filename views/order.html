@@ -1,0 +1,22 @@
+﻿<div class="down" ng-controller="OrderController">
+  
+<div class="container" id = "rcorners1">
+	<h3>{{order.title}}</h3>
+    	<p>
+		{{order.info}}
+		</p>
+		<h4>Офис, прием заказов</h4>
+			<div ng-repeat= "phone in contacts.phones">Телефон/факс: <strong>{{phone}}</strong></div>
+		<h4>Электронная почта</h4>
+			<div  ng-repeat="email in contacts.emails">E-mail:<strong><a ng-href="mailto:{{email}}">{{email}}</a></strong></div>
+		<h4>Доставка</h4>
+		{{order.delivery.info}}
+			<div class = "center">
+			<ul align="left">
+				<li ng-repeat="city in order.delivery.citys"><strong>{{city}}</strong></li>
+			</ul>
+			</div>
+		<h4>Торговый представитель, прием заказов</h4>
+			<div ng-repeat= "sale in contacts.sales">Телефон:<strong>{{sale}}</strong></div>
+  </div>
+  </div>

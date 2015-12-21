@@ -1,0 +1,34 @@
+﻿<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://novsir.ru/</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/about</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/pricelist</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/order</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/contacts</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/location</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/productions</loc>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://novsir.ru/#/actions</loc>
+	<changefreq>daily</changefreq>
+</url>
+</urlset>

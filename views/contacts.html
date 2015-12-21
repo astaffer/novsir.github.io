@@ -1,0 +1,18 @@
+﻿<div class="down" ng-controller="ContactsController">
+  <div class="container" id = "rcorners1">
+	<h3>{{contacts.title}}</h3>
+    	<p>
+		<h4>Офис, прием заказов</h4>
+			<div ng-repeat= "phone in contacts.phones">Телефон/факс: <strong>{{phone}}</strong></div>
+		<h4>Электронная почта</h4>
+			<div  ng-repeat="email in contacts.emails">E-mail:<strong><a ng-href="mailto:{{email}}">{{email}}</a></strong></div>
+		<h4>Торговый представитель, прием заказов</h4>
+			<div ng-repeat= "sale in contacts.sales">Телефон:<strong>{{sale}}</strong></div>
+		<h4>Адрес</h4>
+		<strong>{{contacts.address}}</strong>
+		<h4>Режим работы</h4>
+		  <div ng-repeat= "time in contacts.timetable"><strong>{{time}}</strong></div>
+	</p>
+
+  </div>
+  </div>

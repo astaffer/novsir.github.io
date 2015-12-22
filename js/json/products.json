@@ -1,4 +1,4 @@
-{
+﻿{
 	"products": {
 		"title": "Продукция",
 		"items": [
@@ -7,30 +7,39 @@
 				"icon": "img/butterlogo.svg",
 				"title": "МАСЛО",
 				"alt": "Масло сливочное"
+				,"navigate":"butter"
 			}, {
 				"icon": "img/milklogo.svg",
 				"title": "МОЛОКО",
 				"alt": "Молоко цельное"
+				,"navigate":"milk"
+
 			}, {
 				"icon": "img/cheeselogo.svg",
 				"title": "СЫР",
-				"alt": "Сыр"
+				"alt": "Сыр",
+				"navigate":"cheese"
+				
 			}, {
 				"icon": "img/yogurt.svg",
 				"title": "ЙОГУРТ",
 				"alt": "Йогурт"
+				,"navigate":"yogurt"
 			}, {
 				"icon": "img/perishable.svg",
 				"title": "СКОРОПОРТ",
 				"alt": "Скоропорт"
+				,"navigate":"perishable"
 			}, {
 				"icon": "img/meltedcheese.svg",
 				"title": "ПЛАВЛЕННЫЙ СЫР",
 				"alt": "Плавленный сыр"
+				,"navigate":"meltedcheese"
 			}, {
 				"icon": "img/other.svg",
 				"title": "РАЗНОЕ",
 				"alt": "Молочные продукты"
+				,"navigate":"other"
 			}
 		]
 	}

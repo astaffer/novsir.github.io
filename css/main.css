@@ -104,7 +104,7 @@ max-height:500px;
     height: 200px;
     background:#F7F181;
     box-sizing: border-box;
-    padding: 10px;
+    padding-top: 35px;
     /*border: 3px solid red;*/
 }
 .nav.nav-center {
@@ -128,7 +128,13 @@ color: #80C9A5;
 }
 img.icon
 {
-  margin: 0 20px 0 0;
+  height: 130px;
+  width: 130px;
+  display: block;
+	margin: 0 auto;
+}
+img.product
+{
   height: 180px;
   width: 180px;
   display: block;

@@ -1,13 +1,25 @@
-﻿<div class="down" ng-controller="ActionsController">
-  
-	<div class="photo">
-	  <div class="container">
-	    <img ng-src="{{ detail.icon }}" alt = "{{detail.alt}}">
-	    <h2 class="photo-title">{{detail.title}} </h2>
-	    <p class="photo-author">{{detail.author}} </p>
-	    <p class="photo-views">{{detail.views | number}} </p>
-	    <p class="photo-upvotes">{{detail.upvotes | number}} </p>
-	    <p class="photo-pubdate"> {{detail.pubdate | date}}</p>
+﻿<div class="down" ng-controller="ProductController">
+  <div class="container" id = "rcorners1">
+<p align ="left" >
+<a href = "#/productions">\Продукция</a>
+</p>
+		<div class="row">
+			<h2 class="photo-title">{{detail.title}} </h2>
+			<div class="col-md-6">
+	    			<img class = "product" ng-src="{{ detail.icon }}" alt = "{{detail.alt}}">
+			</div>	
+			<div class="col-md-6">{{ items.text }}
+   			</div>	
+ 		</div>
+  </div>
+<div>&nbsp</div>
+  <div class="container">
+	    <div class="card" ng-repeat="item in items.items">
+			<div class="circleBase type2">
+				<img class="icon" ng-src="{{ item.icon }}" alt = "{{item.alt}}" >
+			</div>
+			<h3 class = "title">{{ item.title }}</h3> 
+		</div>
 	  </div>
 </div>
 </div>

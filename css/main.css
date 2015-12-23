@@ -89,7 +89,6 @@ max-height:500px;
 }
 .circleBase {
     border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 }
 .type1 {
     width: 180px;

@@ -32,8 +32,8 @@
 				,"navigate":"perishable"
 			}, {
 				"icon": "img/meltedcheese.svg",
-				"title": "ПЛАВЛЕННЫЙ СЫР",
-				"alt": "Плавленный сыр"
+				"title": "ПЛАВЛЕНЫЙ СЫР",
+				"alt": "Плавленый сыр"
 				,"navigate":"meltedcheese"
 			}, {
 				"icon": "img/other.svg",

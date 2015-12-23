@@ -135,6 +135,13 @@ img.icon
 }
 img.product
 {
+  max-height: 150px;
+  max-width: 150px;
+  display: block;
+	margin: 0 auto;
+}
+img.productgroup
+{
   height: 180px;
   width: 180px;
   display: block;

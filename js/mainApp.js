@@ -23,4 +23,7 @@ var main = function(){
 	});
 };
 //alert(window.location.href);
-$(document).ready(main);
+//$(document).ready(main);
+$(function(){
+main();
+});

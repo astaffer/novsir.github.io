@@ -6,7 +6,7 @@
 		<div class="row">
 			<h2 class="photo-title">{{detail.title}} </h2>
 			<div class="col-md-6">
-	    			<img class = "product" ng-src="{{ detail.icon }}" alt = "{{detail.alt}}">
+	    			<img class = "productgroup" ng-src="{{ detail.icon }}" alt = "{{detail.alt}}">
 			</div>	
 			<div class="col-md-6">{{ items.text }}
    			</div>	
@@ -15,11 +15,13 @@
 <div>&nbsp</div>
   <div class="container">
 	    <div class="card" ng-repeat="item in items.items">
+<a href="{{items.fullsize}}/{{item.icon}}" data-lightbox="roadtrip"  data-title={{item.title}}>
 			<div class="circleBase type2">
-				<img class="icon" ng-src="{{ item.icon }}" alt = "{{item.alt}}" >
+				<img class="product" ng-src="{{items.thumbnail}}/{{ item.icon }}" alt = "{{item.alt}}" >
 			</div>
 			<h3 class = "title">{{ item.title }}</h3> 
+</a>
 		</div>
 	  </div>
-</div>
+</div> 
 </div>

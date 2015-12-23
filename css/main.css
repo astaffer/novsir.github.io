@@ -147,7 +147,8 @@ img.productgroup
 	margin: 0 auto;
 }
 img.centered {
-    width:460px;
+     width:100%;
+	max-width:460px;
 	display: block;
 	margin: 0 auto;}
 .align_center

@@ -2,7 +2,7 @@ app.factory('dataService', function($http, $q){
     return{
         getProducts: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\products.json'}).
+            $http({method: 'GET', url: '/js/json/products.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.products);
             }).
@@ -14,7 +14,7 @@ app.factory('dataService', function($http, $q){
         },
         getAbout: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\about.json'}).
+            $http({method: 'GET', url: '/js/json/about.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.about);
             }).
@@ -26,7 +26,7 @@ app.factory('dataService', function($http, $q){
         },
         getActions: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\actions.json'}).
+            $http({method: 'GET', url: '/js/json/actions.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.actions);
             }).
@@ -39,7 +39,7 @@ app.factory('dataService', function($http, $q){
         ,
         getOrder: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\order.json'}).
+            $http({method: 'GET', url: '/js/json/order.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.order);
             }).
@@ -52,7 +52,7 @@ app.factory('dataService', function($http, $q){
         ,
         getLocation: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\location.json'}).
+            $http({method: 'GET', url: '/js/json/location.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.location);
             }).
@@ -65,7 +65,7 @@ app.factory('dataService', function($http, $q){
         ,
         getPricelist: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\pricelist.json'}).
+            $http({method: 'GET', url: '/js/json/pricelist.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.pricelist);
             }).
@@ -77,7 +77,7 @@ app.factory('dataService', function($http, $q){
         } ,
         getContacts: function(){
             var deferred = $q.defer();
-            $http({method: 'GET', url: '\js\\json\\contacts.json'}).
+            $http({method: 'GET', url: '/js/json/contacts.json'}).
              success(function(data, status, headers, config) {
                 deferred.resolve(data.contacts);
             }).

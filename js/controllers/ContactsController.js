@@ -27,6 +27,7 @@ app.controller('ContactsController',
 			  error(function(data, status, headers, config) {
 				// called asynchronously if an error occurs
 				// or server returns response with an error status.
+				alert(answer.author + ", извините, не удалось отправить сообщение.");
 			  });
                 
             }

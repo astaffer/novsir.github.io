@@ -7,7 +7,7 @@ app.controller('ContactsController',
 					var param = JSON.stringify({'key': 'ES1fqDzSBDEpbOw1Kph4Pw',
 				   'message': {
 					   'from_email': 'website@novsir.ru',
-					   'to': [{'email': 'astaffer@mail.ru', 'type': 'to'}],
+					   'to': [{'email': 'novcur@mail.ru', 'type': 'to'}],
 					   'autotext': 'true',
 					   'subject': 'Сообщение с сайта novsir',
 					   'html': '<h1>Новое сообщение</h1>'

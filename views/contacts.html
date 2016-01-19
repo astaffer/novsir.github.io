@@ -1,18 +1,35 @@
 ﻿<div class="down" ng-controller="ContactsController">
   <div class="container" id = "rcorners1">
-	<h3>{{contacts.title}}</h3>
-    	<p>
-		<h4>Офис, прием заказов</h4>
-			<div ng-repeat= "phone in contacts.phones">Телефон/факс: <strong>{{phone}}</strong></div>
-		<h4>Электронная почта</h4>
-			<div  ng-repeat="email in contacts.emails">E-mail:<strong><a ng-href="mailto:{{email}}">{{email}}</a></strong></div>
-		<h4>Торговый представитель, прием заказов</h4>
-			<div ng-repeat= "sale in contacts.sales">Телефон:<strong>{{sale}}</strong></div>
-		<h4>Адрес</h4>
-		<strong>{{contacts.address}}</strong>
-		<h4>Режим работы</h4>
-		  <div ng-repeat= "time in contacts.timetable"><strong>{{time}}</strong></div>
-	</p>
-
+	<div class="row">
+	  <h3>{{contacts.title}}</h3>
+	  <div class="col-md-6">
+		  <p>
+		  <h4>Офис, прием заказов</h4>
+			  <div ng-repeat= "phone in contacts.phones">Телефон/факс: <strong>{{phone}}</strong></div>
+		  <h4>Электронная почта</h4>
+			  <div  ng-repeat="email in contacts.emails">E-mail:<strong><a ng-href="mailto:{{email}}">{{email}}</a></strong></div>
+		  <h4>Торговый представитель, прием заказов</h4>
+			  <div ng-repeat= "sale in contacts.sales">Телефон:<strong>{{sale}}</strong></div>
+		  <h4>Адрес</h4>
+		  <strong>{{contacts.address}}</strong>
+		  <h4>Режим работы</h4>
+			<div ng-repeat= "time in contacts.timetable"><strong>{{time}}</strong></div>
+		  </p>
+	  </div>
+	  <div class="col-md-6">
+		<h4>Написать нам</h4>
+		<form name="answerForm">
+		  <fieldset>
+			  <p><label for="answerAuthor">Как к Вам обращаться: </label></p>
+			  <input id="answerAuthor" ng-model="answer.author" required placeholder="например, Мария Петровна Иванова" />
+			  <p><label for="answerEmail">Email для связи: </label></p>
+			  <p>	<input id="answerAuthor" ng-model="answer.email" type="email" required placeholder="например, mivanova@yandex.ru" /></p>
+			  <p><label for="answerText">Ваше сообщение: </label></p>
+					  <p><textarea required rows="5" id="answerText" ng-model="answer.text" required placeholder="Здравствуйте, "></textarea></p>
+		  </fieldset>
+		  <button type="submit" ng-click="save(answer, answerForm)">Отправить</button>
+		</form>
+	  </div>
+	</div>
   </div>
-  </div>
+</div>

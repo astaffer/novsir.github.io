@@ -22,7 +22,11 @@ app.controller('ContactsController',
 				// when the response is available
 				console.log(data);
 				// действия по сохранению
+			 answer.author = null;
+			 answer.email = null;
+			 answer.text = null;
                 alert(answer.author + ", Ваше сообщение отправлено");
+			
 			  }).
 			  error(function(data, status, headers, config) {
 				// called asynchronously if an error occurs

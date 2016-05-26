@@ -254,7 +254,6 @@ textarea {
 input {
 	  min-width:280px;
 }
-
 input.ng-invalid {
     background-color: white;
 }

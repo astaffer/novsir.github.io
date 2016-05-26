@@ -1,6 +1,17 @@
 ﻿<div class="down" ng-controller="ActionsController">
   
 	<div class="container" id = "rcorners1">
-		<h3>{{actions.title}}</h3>
+		<div class="row">
+	 		<h3>{{actions.title}}</h3>
+	  		<div class="col-md-6">
+				<img src="img/offer.png" width="360px" \>
+			</div>
+			<div class="col-md-6">	
+		 		<h4>Акция месяца </h4>
+					<a ng-href="{{actions.link1}}">Скачать</a>
+				<h4>Спец-предложение</h4>
+					<a ng-href="{{actions.link2}}">Скачать</a>
+			</div>
+		</div>
 	</div>
 </div>

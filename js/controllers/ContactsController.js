@@ -4,18 +4,17 @@ app.controller('ContactsController',
         promiseObj.then(function(value) { $scope.contacts=value; });
          $scope.save = function (answer, answerForm){
             if(answerForm.$valid){
-					var param = JSON.stringify({'key': 'ES1fqDzSBDEpbOw1Kph4Pw',
-				   'message': {
+					var param = JSON.stringify({
 					   'from_email': 'website@novsir.ru',
-					   'to': [{'email': 'novcur@mail.ru', 'type': 'to'}],
+					   'to':  'novcur@mail.ru' ,
 					   'autotext': 'true',
 					   'subject': 'Сообщение с сайта novsir',
-					   'html': '<h1>Новое сообщение</h1>'
-							+'<b>Обращение:</b>'+answer.author
-							+'<br><b>E-mail адрес:</b>'+answer.email
-							+'<br><b>Текст обращения:</b>'+'<p>'+answer.text+'</p>'
-					}});
-					var url = 'https://mandrillapp.com/api/1.0/messages/send.json';
+					   'html': 'Новое сообщение',
+					   'author':answer.author,
+						'E-mail':answer.email,
+							'text':answer.text
+					});
+					var url = 'https://formspree.io/astaffer@gmail.com';
 		$http.post(url,param)
 				.success(function(data, status, headers, config) {
 				// this callback will be called asynchronously

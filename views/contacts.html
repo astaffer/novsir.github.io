@@ -2,7 +2,7 @@
   <div class="container" id = "rcorners1">
 	<div class="row">
 	  <h3>{{contacts.title}}</h3>
-	  <div class="col-md-6">
+	  <div class="col-md-12">
 		  <p>
 		  <h4>Офис, прием заказов</h4>
 			  <div ng-repeat= "phone in contacts.phones">Телефон/факс: <strong>{{phone}}</strong></div>
@@ -16,7 +16,7 @@
 			<div ng-repeat= "time in contacts.timetable"><strong>{{time}}</strong></div>
 		  </p>
 	  </div>
-	  <div class="col-md-6">
+	  <!--<div class="col-md-6">
 		<h4>Написать нам</h4>
 		<form name="answerForm">
 		  <fieldset>
@@ -29,7 +29,7 @@
 		  </fieldset>
 		  <button type="submit" ng-click="save(answer, answerForm)">Отправить</button>
 		</form>
-	  </div>
+	  </div>-->
 	</div>
   </div>
 </div>
